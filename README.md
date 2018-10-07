@@ -10,6 +10,7 @@ Do you know what the hardest part of software development is? Naming variables? 
 ## How to use it
 This library defines three main abstract classes.
 1. CloneWith
+
 It basically defines a method replicating Scala's copy method. Usage example (written in TypeScript):
 ```
 import { CloneWith } from 'blinsky';
@@ -63,6 +64,9 @@ const updatedHouse = house.transformFor(
 house.getFurniture() + " vs " + updatedHouser.getFurniture(); // [] vs ["Table", "Chair"]
 ```
 2. ValueObject
+
 This is basically the same as `CloneWith`, but it also declares "equals" and "hashCode" methods to make it work nicely with [Immutable.js](https://github.com/facebook/immutable-js/). These methods uses all the objects' fields to check for equality and compute the hash code. Refer [DDD's value object for more info](https://martinfowler.com/bliki/ValueObject.html). Usage is exactly same as with CloneWith, just use ValueObject instead of CloneWith.
+
 3. IdentifiedEntity
+
 Same as ValueObject, except it uses only object's identifier for checking the equality and computing hash code. Refer [DDD's entity for more info](https://enterprisecraftsmanship.com/2016/01/11/entity-vs-value-object-the-ultimate-list-of-differences/). Usage is exactly same as with CloneWith, just use IdentifiedEntity instead of CloneWith.
