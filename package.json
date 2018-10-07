@@ -37,11 +37,11 @@
   "keywords": [
     "nodejs",
     "node",
-    "context",
-    "domain",
-    "promise",
-    "callback",
-    "threadlocal"
+    "ddd",
+    "immutable",
+    "immutability",
+    "functional",
+    "fp"
   ],
   "license": "Unlicense",
   "main": "build/index.js",
