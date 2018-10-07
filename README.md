@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/bleshik/blinsky.svg?branch=master)](https://travis-ci.org/bleshik/blinsky)
 # blinsky
-![](https://s3-eu-west-1.amazonaws.com/bleshik/Blinsky.png "Стопка блинов")
+![](https://s3-eu-west-1.amazonaws.com/bleshik/Blinsky+Small.png "Стопка блинов")
+
 Utility classes for functional programming in JS. The goal is to make creation of immutable classes easier.
 
 ## Why is it called 'blinsky'?
